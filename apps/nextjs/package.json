@@ -1,5 +1,5 @@
 {
-  "name": "@acme/nextjs",
+  "name": "nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,8 +13,8 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "zod": "^3.18.0",
-    "@acme/db": "*",
-    "@acme/api": "*",
+    "db": "*",
+    "api": "*",
     "@tanstack/react-query": "^4.2.3",
     "@trpc/server": "10.0.0-proxy-beta.0",
     "@trpc/client": "10.0.0-proxy-beta.0",
