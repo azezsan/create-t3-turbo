@@ -1,0 +1,50 @@
+{
+  "name": "qwik",
+  "description": "Recommended for your first Qwik app",
+  "engines": {
+    "node": ">=15.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.types": "tsc --incremental --noEmit",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "preview": "qwik build preview && vite preview --open",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik"
+  },
+  "dependencies": {
+    "zod": "^3.18.0",
+    "db": "*",
+    "api": "*",
+    "@tanstack/react-query": "^4.2.3",
+    "@trpc/server": "10.0.0-proxy-beta.0",
+    "@trpc/client": "10.0.0-proxy-beta.0",
+    "@trpc/next": "10.0.0-proxy-beta.0",
+    "@trpc/react": "10.0.0-proxy-beta.0"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "0.9.0",
+    "@builder.io/qwik-city": "0.0.111",
+    "@types/eslint": "8.4.6",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "5.37.0",
+    "@typescript-eslint/parser": "5.37.0",
+    "eslint": "8.23.1",
+    "eslint-plugin-qwik": "0.9.0",
+    "node-fetch": "3.2.10",
+    "prettier": "2.7.1",
+    "typescript": "4.8.3",
+    "tailwindcss": "^3.1.6",
+    "postcss": "^8.4.14",
+    "autoprefixer": "^10.4.7",
+    "vite": "3.1.1",
+    "vite-tsconfig-paths": "3.5.0"
+  }
+}
